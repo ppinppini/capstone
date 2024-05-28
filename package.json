@@ -46,5 +46,14 @@
             "require": "./dist/majorpick.umd.js"
         }
     },
-    "proxy": "http://43.200.172.87:8080/"
+    "proxy": {
+        "/survey": {
+            "target": "http://majorpick.s3-website.ap-northeast-2.amazonaws.com/majorpick ",
+            " pathRewrite": {
+                "^/survey": ""
+            }
+        }
+    }
+ 
+    
 }

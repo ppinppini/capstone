@@ -371,12 +371,17 @@ const Survey = () => {
         };
 
         console.log("Form Data:", formData);
-        fetch("http://43.200.172.87:8080/", {
+        fetch("http://43.200.172.87:8080", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json; charset=utf-8",
+                "Access-Control-Allow-Headers": "Content-Type",
+                "Access-Control-Allow-Origin": `http://majorpick.s3-website.ap-northeast-2.amazonaws.com`,
+                "Access-Control-Allow-Credentials": "true",
+                "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
             },
             body: JSON.stringify(formData),
+            credentials: "include",
         })
             .then((res) => {
                 console.log(res);
