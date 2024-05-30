@@ -1,9 +1,14 @@
 .form {
-    border: 1px solid;
+    border-radius: 10px;
     width: 60%;
     height: auto;
     margin: 0 auto;
+    background-color: #f6f6f6;
+    margin-top: 100px;
+  
 }
 .header {
+    padding-top: 2rem;
     text-align: center;
+
 }

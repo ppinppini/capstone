@@ -7,30 +7,29 @@
 .imgSlider {
     position: relative;
     width: 100vw;
-    height: 300px;  
-    overflow: hidden;  /* 추가: 부모 요소의 크기를 초과하는 자식 요소를 숨김 */
+    height: 300px;
+    overflow: hidden; /* 추가: 부모 요소의 크기를 초과하는 자식 요소를 숨김 */
 }
 
 .sliderContainer {
     position: absolute;
-    width: 200%;  /* 변경: 두 개의 슬라이드를 포함하도록 너비를 조정 */
+    width: 200%; /* 변경: 두 개의 슬라이드를 포함하도록 너비를 조정 */
     top: 0;
     left: 0;
     animation: slider 10s infinite;
-    display: flex;  /* 추가: 슬라이드를 가로로 배치 */
+    display: flex; /* 추가: 슬라이드를 가로로 배치 */
 }
 
 .slide {
-    width: 100vw;  /* 각 슬라이드의 너비를 부모의 너비로 설정 */
-    flex: none;  /* 슬라이드 요소가 flexbox 내부에서 크기가 조정되지 않도록 설정 */
+    width: 100vw; /* 각 슬라이드의 너비를 부모의 너비로 설정 */
+    flex: none; /* 슬라이드 요소가 flexbox 내부에서 크기가 조정되지 않도록 설정 */
 }
 
 .slide img {
     width: 100%;
     height: 400px;
-    object-fit: contain;  /* 이미지가 부모 요소에 맞게 비율을 유지하며 채우도록 설정 */
+    object-fit: contain; /* 이미지가 부모 요소에 맞게 비율을 유지하며 채우도록 설정 */
 }
-
 
 @keyframes slider {
     0%,
@@ -39,8 +38,7 @@
     }
     50%,
     75% {
-        
-        left: -100vw;  /* 변경: 슬라이드 애니메이션의 이동 값을 너비에 맞게 조정 */
+        left: -100vw; /* 변경: 슬라이드 애니메이션의 이동 값을 너비에 맞게 조정 */
     }
     100% {
         left: 0;

@@ -1,0 +1,106 @@
+.name,
+.studentId {
+    border: 1px solid #f6f6f6;
+    border-radius: 8px;
+    width: 80%;
+    height: 74px;
+    padding: 1em;
+    margin-bottom: 3rem;
+}
+.userInfo {
+    text-align: left;
+    margin-left: 2.5rem;
+}
+.major__sex {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.currentSex,
+.currentMajor {
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid #f6f6f6;
+    border-radius: 8px;
+    width: 30%;
+    gap: 1em;
+}
+.majorBtn,
+.sexBtn {
+    opacity: 0;
+}
+.currentMajor > .majorBox > input[type="radio"]:checked + label,
+.currentSex > .sexBox > input[type="radio"]:checked + label {
+    background-color: #fe7f38;
+    color: #ffffff;
+}
+.currentMajor > .majorBox > input[type="radio"]:hover + label,
+.currentSex > .sexBox > input[type="radio"]:hover + label {
+    background-color: #fe7f38;
+    color: #ffffff;
+}
+.majorLabel,
+.sexLabel {
+    background-color: #f3f3f3;
+    border: 2px solid #f6f6f6;
+    border-radius: 8px;
+    padding: 10px;
+    color: #9f9f9f;
+}
+.select_current_majorTitle,
+.select_current_sexTitle,
+.select_current_mbtiTitle {
+    background-color: #ffff;
+    border: 2px solid #f6f6f6;
+    border-radius: 8px;
+    padding: 10px;
+}
+.majorBox,
+.sexBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffff;
+    border: 2px solid #f6f6f6;
+    border-radius: 8px;
+    padding: 10px;
+}
+.mbti {
+    display: flex;
+    justify-content: center;
+}
+.mbtiPlaceholder {
+    color: black;
+    width: 10%;
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+.majorLabel,
+.sexLabel,
+.surveyBtn:hover {
+    cursor: pointer;
+}
+.surveyBtn {
+    border: 1px solid #fe7f38;
+    background-color: #ffff;
+    color: #fe7f38;
+    width: 30%;
+    height: 66px;
+    border-radius: 8px;
+    margin: 4rem 0;
+}
+.select_current_majorTitle,
+.select_current_sexTitle {
+    display: flex;
+    gap: 1rem;
+}
+.select_current_Title_text {
+    margin-top: 0.5rem;
+}
+.veryLow {
+    color: red;
+    background-color: black;
+}

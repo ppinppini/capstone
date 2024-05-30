@@ -1,10 +1,10 @@
-const { createProxyMiddleware } = require("http-proxy-middleware");
+// const { createProxyMiddleware } = require("http-proxy-middleware");
 
-module.exports = (app) => {
-    app.use(
-        createProxyMiddleware("/survey", {
-            target: "http://43.200.172.87:8080",
-            changeOrigin: true,
-        })
-    );
-};
+// module.exports = (app) => {
+//     app.use(
+//         createProxyMiddleware("/survey", {
+//             target: "http://localhots:8080",
+//             changeOrigin: true,
+//         })
+//     );
+// };
