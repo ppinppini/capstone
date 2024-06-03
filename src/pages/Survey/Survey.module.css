@@ -6,15 +6,18 @@
     height: 74px;
     padding: 1em;
     margin-bottom: 3rem;
+    font-size: 16px;
 }
 .userInfo {
     text-align: left;
-    margin-left: 2.5rem;
+    margin-left: 6rem;
 }
+
 .major__sex {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 80%;
+    margin-left: 5.5rem;
 }
 
 .currentSex,
@@ -24,8 +27,9 @@
 
     border: 2px solid #f6f6f6;
     border-radius: 8px;
-    width: 30%;
+    width: 100%;
     gap: 1em;
+    margin: 0 auto;
 }
 .majorBtn,
 .sexBtn {
@@ -55,7 +59,10 @@
     background-color: #ffff;
     border: 2px solid #f6f6f6;
     border-radius: 8px;
-    padding: 10px;
+    padding-top: 20px;
+
+    height: 60px;
+    font-size: 18px;
 }
 .majorBox,
 .sexBox {
@@ -87,20 +94,35 @@
     border: 1px solid #fe7f38;
     background-color: #ffff;
     color: #fe7f38;
-    width: 30%;
-    height: 66px;
+    width: 80%;
+    height: 70px;
     border-radius: 8px;
     margin: 4rem 0;
+    margin-top: 8rem;
+    font-size: 21px;
 }
 .select_current_majorTitle,
 .select_current_sexTitle {
     display: flex;
     gap: 1rem;
+    justify-content: center;
+    padding-bottom: 40px;
 }
-.select_current_Title_text {
-    margin-top: 0.5rem;
-}
+
 .veryLow {
     color: red;
     background-color: black;
+}
+.major__icon,
+.sex__icon {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+.nextBtn {
+    background-color: #ffff;
+    border: 1px solid #fe7f38;
+    color: #fe7f38;
+    width: 80%;
+    height: 70px;
 }
