@@ -1,5 +1,20 @@
-.header {
-    background-color: black;
-    text-align: left;
-    margin-top: 100px;
+header {
+    position: relative;
+}
+header > .orange {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 15%;
+    height: auto;
+}
+.fair {
+    position: absolute;
+    bottom: 7em;
+    right: 0px;
+    width: 15%;
+    height: auto;
+}
+.homeImg {
+    margin-left: 4em;
 }

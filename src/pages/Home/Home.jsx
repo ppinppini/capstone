@@ -4,7 +4,9 @@ import logo from "../../assets/logo.png";
 import styled from "styled-components";
 import homeImg from "../../assets/homeImg.png";
 import { Footer } from "../../components/Footer";
-import "./Home.module.css";
+import orange from "../../assets/orange.png";
+import style from "./Home.module.css";
+import fair from "../../assets/fair.png";
 
 export const Home = () => {
     const navigate = useNavigate();
@@ -12,9 +14,10 @@ export const Home = () => {
         navigate("/survey");
     };
     const Head = styled.header`
-        text-align: left;
+        text-align: center;
         padding-top: 10px;
         padding-left: 10px;
+        margin-bottom: 4em;
     `;
     const Main = styled.div`
         text-align: center;
@@ -30,8 +33,8 @@ export const Home = () => {
         margin-bottom: 2.5rem;
         font-size: 16px;
         color: #fe7f38;
-
-        font-size: 14px;
+        font-weight: 600;
+        font-size: 18px;
         letter-spacing: 1px;
         cursor: pointer;
         box-shadow: inset 0 0 0 0 #fe7f38;
@@ -52,12 +55,14 @@ export const Home = () => {
     return (
         <div>
             <Head>
-                <img src={logo} alt="로고 이미지"  />
+                <img src={orange} alt="orange" className={style.orange} />
+                <img src={logo} alt="로고 이미지" />
             </Head>
             <Main>
-                <img src={homeImg} alt="홈 로고 이미지"  />
+                <img src={homeImg} alt="홈 로고 이미지" className={style.homeImg} />
             </Main>
             <Button onClick={nextPage}>전공 찾기</Button>
+            <img src={fair} alt="orange" className={style.fair} />
             <Footer></Footer>
         </div>
     );

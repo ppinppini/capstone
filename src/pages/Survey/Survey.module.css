@@ -32,7 +32,8 @@
     margin: 0 auto;
 }
 .majorBtn,
-.sexBtn {
+.sexBtn,
+.questionBtnRadio {
     opacity: 0;
 }
 .currentMajor > .majorBox > input[type="radio"]:checked + label,
@@ -125,4 +126,129 @@
     color: #fe7f38;
     width: 80%;
     height: 70px;
+}
+.veryLow,
+.low,
+.commonly,
+.high,
+.veryHigh {
+    border-radius: 100%;
+    border: 3px solid #fe7f38;
+    background-color: #ffff;
+}
+.veryLow,
+.veryHigh {
+    width: 74px;
+    height: 74px;
+}
+.low,
+.high {
+    width: 62px;
+    height: 62px;
+}
+.commonly,
+.medicalEngeneering,
+.medicalManagement,
+.bigData {
+    width: 56px;
+    height: 56px;
+}
+.choiceList {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.veryLow,
+.low,
+.commonly,
+.high,
+.veryHigh,
+.bigData,
+.medicalEngeneering,
+.medicalManagement:hover {
+    cursor: pointer;
+}
+
+.choiceList .questionBtn input[type="radio"]:checked + label {
+    background-color: #fe7f38;
+    color: #ffffff;
+}
+
+.choiceList .questionBtn input[type="radio"]:hover + label {
+    background-color: #fe7f38;
+    color: #ffffff;
+}
+
+.low,
+.high {
+    margin: 0.25em 0;
+}
+.commonly {
+    margin: 0.5em 0;
+}
+.surveyBtnPage {
+    margin-top: 3em;
+}
+.surveyBtnPage:hover {
+    cursor: pointer;
+}
+
+.choiceLeft {
+    display: block;
+    background-color: #fe7f38;
+    width: 100px;
+    height: 36px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 9px;
+    align-self: center;
+    color: #ffff;
+}
+.choiceRight {
+    display: block;
+    background-color: #fe7f38;
+    width: 100px;
+    height: 36px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-top: 9px;
+    align-self: center;
+    color: #ffff;
+}
+
+.questionBox {
+    margin: 0 auto;
+    width: 955px;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 2em;
+}
+.bigData,
+.medicalEngeneering,
+.medicalManagement {
+    width: 194px;
+    height: 57px;
+    color: #9f9f9f;
+    border: 1px solid #fe7f38;
+    padding-top: 1em;
+    border-radius: 10px;
+}
+.labelMajor {
+    width: 163px;
+    height: 36px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fe7f38;
+    color: #ffff;
+    font-size: 16px;
+    padding-top: 10px;
+    align-self: center;
+    margin-top: 1em;
+}
+.choiceListBox{
+    margin-bottom: 2em;
+}
+.choiceListBox >h3{
+    margin-top: 2em;
 }
