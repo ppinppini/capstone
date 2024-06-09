@@ -241,7 +241,7 @@
     border-bottom-right-radius: 20px;
     background-color: #fe7f38;
     color: #ffff;
-    font-size: 16px;
+    font-size: 14px;
     padding-top: 10px;
     align-self: center;
     margin-top: 1em;
@@ -251,4 +251,9 @@
 }
 .choiceListBox >h3{
     margin-top: 2em;
+    font-weight: 500;
+}
+.questionTitle{
+    padding-top: 1em;
+    margin-bottom: 2em;
 }

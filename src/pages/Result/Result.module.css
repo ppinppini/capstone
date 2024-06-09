@@ -1,0 +1,49 @@
+.main {
+    width: 70%;
+    height: 722px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: right;
+    margin-right: 0px;
+    margin-left: 25rem;
+}
+
+.resultBox {
+    height: 500px;
+    position: absolute;
+    left: 1rem;
+    top: 20rem;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.resultMajor {
+    font-size: 60px;
+    animation: fly-in 0.5s ease-out forwards;
+}
+
+.서비스멘트 {
+    margin-top: 4rem;
+    color: #fe7f38;
+    font-size: 30px;
+    animation: fly-in 1s ease-out forwards;
+}
+.들어야되는멘트 {
+    text-align: left;
+    margin-top: 4rem;
+
+    font-size: 16px;
+    animation: fly-in 1.5s ease-out forwards;
+}
+
+@keyframes fly-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

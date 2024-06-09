@@ -702,7 +702,7 @@ const Survey = () => {
                             해당 단어를 듣고 관심을 말해주세요.😁
                         </h2>
                         <div className={style.questionBox}>
-                            <h1>학부별 전공 흥미 조사</h1>
+                            <h1 className={style.questionTitle}>학부별 전공 흥미 조사</h1>
                             {renderQuestions(page1Questions, choices, responsesPage1, 1, choices2)}
 
                             <button onClick={handleNextPage} style={surveyBtnPage1} className={style.surveyBtnPage}>
