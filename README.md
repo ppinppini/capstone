@@ -12,12 +12,4 @@
 ## ERD
 ![그림1](https://github.com/user-attachments/assets/b23a69ae-91d0-49c8-b9ff-1383c21c0204)
 ## API Method
-초기 설정(“/”) : GET
-설문 조사(“/survey) : POST
-설문 결과 업데이트(”/survey/update) : PUT
-설문 조사 Version2(“/survey/ver2”) : POST / ML과의 연결을 HTTP기반으로 연결
-설문 조사 Version3(“/survey/ver3”) : POST / ML과의 연결을 로컬파일로 연결
-결과값 (“/answer”) : POST
-
-
-
+![스크린샷 2024-09-13 오전 4 57 44](https://github.com/user-attachments/assets/d7a330c1-479c-4c97-a0fb-64a45e9872c8)
