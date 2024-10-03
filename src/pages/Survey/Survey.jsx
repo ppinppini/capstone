@@ -371,7 +371,7 @@ const Survey = () => {
         };
 
         console.log("Form Data:", formData);
-        fetch("http://43.200.172.87:8080", {
+        fetch("http://54.180.131.8:8080", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json; charset=utf-8",
