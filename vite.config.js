@@ -1,12 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import * as path from "path";
 
+// https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react()],
-    resolve: {
-        alias: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
-    },
     server: {
         proxy: {
             // 문자열만 사용한다면 프록시를 거쳐 아래와 같이 변경된 주소로 요청된다.

@@ -1,0 +1,259 @@
+.name,
+.studentId {
+    border: 1px solid #f6f6f6;
+    border-radius: 8px;
+    width: 80%;
+    height: 74px;
+    padding: 1em;
+    margin-bottom: 3rem;
+    font-size: 16px;
+}
+.userInfo {
+    text-align: left;
+    margin-left: 6rem;
+}
+
+.major__sex {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 5.5rem;
+}
+
+.currentSex,
+.currentMajor {
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid #f6f6f6;
+    border-radius: 8px;
+    width: 100%;
+    gap: 1em;
+    margin: 0 auto;
+}
+.majorBtn,
+.sexBtn,
+.questionBtnRadio {
+    opacity: 0;
+}
+.currentMajor > .majorBox > input[type="radio"]:checked + label,
+.currentSex > .sexBox > input[type="radio"]:checked + label {
+    background-color: #fe7f38;
+    color: #ffffff;
+}
+.currentMajor > .majorBox > input[type="radio"]:hover + label,
+.currentSex > .sexBox > input[type="radio"]:hover + label {
+    background-color: #fe7f38;
+    color: #ffffff;
+}
+.majorLabel,
+.sexLabel {
+    background-color: #f3f3f3;
+    border: 2px solid #f6f6f6;
+    border-radius: 8px;
+    padding: 10px;
+    color: #9f9f9f;
+}
+.select_current_majorTitle,
+.select_current_sexTitle,
+.select_current_mbtiTitle {
+    background-color: #ffff;
+    border: 2px solid #f6f6f6;
+    border-radius: 8px;
+    padding-top: 20px;
+
+    height: 60px;
+    font-size: 18px;
+}
+.majorBox,
+.sexBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffff;
+    border: 2px solid #f6f6f6;
+    border-radius: 8px;
+    padding: 10px;
+}
+.mbti {
+    display: flex;
+    justify-content: center;
+}
+.mbtiPlaceholder {
+    color: black;
+    width: 10%;
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+.majorLabel,
+.sexLabel,
+.surveyBtn:hover {
+    cursor: pointer;
+}
+.surveyBtn {
+    border: 1px solid #fe7f38;
+    background-color: #ffff;
+    color: #fe7f38;
+    width: 80%;
+    height: 70px;
+    border-radius: 8px;
+    margin: 4rem 0;
+    margin-top: 8rem;
+    font-size: 21px;
+}
+.select_current_majorTitle,
+.select_current_sexTitle {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.veryLow {
+    color: red;
+    background-color: black;
+}
+.major__icon,
+.sex__icon {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+.nextBtn {
+    background-color: #ffff;
+    border: 1px solid #fe7f38;
+    color: #fe7f38;
+    width: 80%;
+    height: 70px;
+}
+.veryLow,
+.low,
+.commonly,
+.high,
+.veryHigh {
+    border-radius: 100%;
+    border: 3px solid #fe7f38;
+    background-color: #ffff;
+}
+.veryLow,
+.veryHigh {
+    width: 74px;
+    height: 74px;
+}
+.low,
+.high {
+    width: 62px;
+    height: 62px;
+}
+.commonly,
+.medicalEngeneering,
+.medicalManagement,
+.bigData {
+    width: 56px;
+    height: 56px;
+}
+.choiceList {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.veryLow,
+.low,
+.commonly,
+.high,
+.veryHigh,
+.bigData,
+.medicalEngeneering,
+.medicalManagement:hover {
+    cursor: pointer;
+}
+
+.choiceList .questionBtn input[type="radio"]:checked + label {
+    background-color: #fe7f38;
+    color: #ffffff;
+}
+
+.choiceList .questionBtn input[type="radio"]:hover + label {
+    background-color: #fe7f38;
+    color: #ffffff;
+}
+
+.low,
+.high {
+    margin: 0.25em 0;
+}
+.commonly {
+    margin: 0.5em 0;
+}
+.surveyBtnPage {
+    margin-top: 3em;
+}
+.surveyBtnPage:hover {
+    cursor: pointer;
+}
+
+.choiceLeft {
+    display: block;
+    background-color: #fe7f38;
+    width: 100px;
+    height: 36px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 9px;
+    align-self: center;
+    color: #ffff;
+}
+.choiceRight {
+    display: block;
+    background-color: #fe7f38;
+    width: 100px;
+    height: 36px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-top: 9px;
+    align-self: center;
+    color: #ffff;
+}
+
+.questionBox {
+    margin: 0 auto;
+    width: 955px;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 2em;
+}
+.bigData,
+.medicalEngeneering,
+.medicalManagement {
+    width: 194px;
+    height: 57px;
+    color: #9f9f9f;
+    border: 1px solid #fe7f38;
+    padding-top: 1em;
+    border-radius: 10px;
+}
+.labelMajor {
+    width: 163px;
+    height: 36px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fe7f38;
+    color: #ffff;
+    font-size: 14px;
+    padding-top: 10px;
+    align-self: center;
+    margin-top: 1em;
+}
+.choiceListBox{
+    margin-bottom: 2em;
+}
+.choiceListBox >h3{
+    margin-top: 2em;
+    font-weight: 500;
+}
+.questionTitle{
+    padding-top: 1em;
+    margin-bottom: 2em;
+}
